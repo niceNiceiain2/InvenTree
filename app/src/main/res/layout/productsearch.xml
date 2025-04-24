@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="log out"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="606dp"
+        tools:layout_editor_absoluteY="140dp" />
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="508dp"
+        android:layout_height="217dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="insideOverlay"
+        android:text=""
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="609dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="406dp"
+                android:layout_height="144dp"
+                android:text="Create Itemnnnnnnnnnnnnnnnnnnnnnnnnnnn gyyyggygygygygyygygygygygygygyghuhuhuhuhuhuhuhhuhhuuhhuuhuhhuuh"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="518dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="566dp"
+        android:layout_height="73dp"
+        android:text="For-Customer Search"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="566dp"
+        android:layout_height="73dp"
+        android:text="Filter Search"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="566dp"
+        android:layout_height="73dp"
+        android:text="Tap to Scan"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="283dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="129dp"
+        android:layout_marginBottom="676dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/logout" />
+
+    <ImageButton
+        android:id="@+id/imageButton11"
+        android:layout_width="93dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="396dp"
+        android:layout_marginBottom="666dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/title" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="566dp"
+        android:layout_height="73dp"
+        android:text="Enter UPC/SKU"
+        android:textSize="48sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        app:srcCompat="@android:drawable/ic_menu_camera"
+        tools:layout_editor_absoluteX="478dp"
+        tools:layout_editor_absoluteY="218dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/keyboard"
+        tools:layout_editor_absoluteX="486dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/filtersearch"
+        tools:layout_editor_absoluteX="478dp"
+        tools:layout_editor_absoluteY="410dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton16"
+        android:layout_width="112dp"
+        android:layout_height="77dp"
+        app:srcCompat="@drawable/forcustomersearch"
+        tools:layout_editor_absoluteX="530dp"
+        tools:layout_editor_absoluteY="512dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
