@@ -10,13 +10,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import edu.utsa.cs4593.inventree.controller.SigninController;
 
-/*
- * Iain Summerlin - tea587
- *
- * The Main Activity class extends AppCompatActivity.
- *
- */
+
 public class MainActivity extends AppCompatActivity {
+    private EditText usernameEditText;
+    private EditText passwordEditText;
+    private Button signinButton;
+
 
     public static EditText username, password;
 

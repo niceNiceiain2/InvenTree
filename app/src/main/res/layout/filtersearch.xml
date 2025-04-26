@@ -5,82 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="312dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="69dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/logout"
+        tools:layout_editor_absoluteX="301dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="98dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/title"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="83dp"
+        android:layout_height="42dp"
+        android:text="No matches found"
+        android:textSize="14sp"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="588dp" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="222dp"
+        android:layout_height="44dp"
+        android:text="Select product location"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="451dp" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="236dp"
+        android:layout_height="55dp"
+        android:text="Select product avaiability"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="21dp"
+        tools:layout_editor_absoluteY="349dp" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="220dp"
+        android:layout_height="54dp"
+        android:text="Select product cateogry"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="250dp" />
+
     <TextView
         android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="log out"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="385dp"
-        tools:layout_editor_absoluteY="155dp" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="248dp"
-        android:layout_height="76dp"
-        android:text="No matches found"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="170dp"
-        tools:layout_editor_absoluteY="752dp" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select product location"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="48dp"
-        tools:layout_editor_absoluteY="614dp" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select product avaiability"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="39dp"
-        tools:layout_editor_absoluteY="438dp" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select product cateogry"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="41dp"
-        tools:layout_editor_absoluteY="279dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logout"
-        tools:layout_editor_absoluteX="374dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton24"
-        android:layout_width="93dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="396dp"
-        android:layout_marginBottom="666dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.138"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.297"
-        app:srcCompat="@drawable/title" />
+        tools:layout_editor_absoluteX="294dp"
+        tools:layout_editor_absoluteY="93dp" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="apply"
-        android:textSize="48sp"
-        tools:layout_editor_absoluteX="385dp"
-        tools:layout_editor_absoluteY="194dp" />
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="160dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="414dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

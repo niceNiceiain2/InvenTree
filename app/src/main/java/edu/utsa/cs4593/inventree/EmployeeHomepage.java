@@ -1,24 +1,16 @@
 package edu.utsa.cs4593.inventree;
 
-import android.graphics.Color;
 import android.os.Bundle;
-import android.view.Gravity;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TableLayout;
-import android.widget.TableRow;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import java.util.List;
 
 /*
  * Iain Summerlin - tea587
  *
  *
  */
-public class MainPageActivity extends AppCompatActivity {
+public class EmployeeHomepage extends AppCompatActivity {
 
     TableLayout tableLayout;
     public static int itemSelected;
@@ -31,8 +23,5 @@ public class MainPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employeehomepage);
-
-
-
     }
 }

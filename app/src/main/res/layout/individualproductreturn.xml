@@ -5,81 +5,72 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="78dp"
+        android:layout_height="53dp"
+        app:srcCompat="@drawable/logout"
+        tools:layout_editor_absoluteX="214dp"
+        tools:layout_editor_absoluteY="30dp" />
+
     <TextView
-        android:id="@+id/textView37"
+        android:id="@+id/textView42"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="log out"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="119dp" />
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="83dp" />
 
     <TextView
         android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="count"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="310dp" />
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="143dp"
+        tools:layout_editor_absoluteY="205dp" />
 
     <TextView
         android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="stock tag"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="248dp" />
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="165dp" />
 
     <TextView
         android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product Name"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="253dp"
-        tools:layout_editor_absoluteY="190dp" />
+        android:text="product Name"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="122dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logout"
-        tools:layout_editor_absoluteX="315dp" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="98dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/title"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="5dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton29"
-        android:layout_width="93dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="396dp"
-        android:layout_marginBottom="666dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.235"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/title" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="273dp"
+        android:layout_height="354dp"
+        app:srcCompat="@drawable/bars"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="252dp" />
 
-    <ImageButton
-        android:id="@+id/imageButton31"
-        android:layout_width="168dp"
-        android:layout_height="158dp"
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="106dp"
+        android:layout_height="122dp"
         app:srcCompat="@drawable/pic1"
-        tools:layout_editor_absoluteX="31dp"
-        tools:layout_editor_absoluteY="190dp" />
-
-    <ImageButton
-        android:id="@+id/imageButton41"
-        android:layout_width="464dp"
-        android:layout_height="441dp"
-        app:srcCompat="@drawable/bars3"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="371dp" />
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="122dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
