@@ -3,6 +3,7 @@ package edu.utsa.cs4593.inventree;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,6 +27,11 @@ public class EmployeeHomepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employeehomepage);
+
+        String username = getIntent().getStringExtra("username");
+        TextView un = findViewById(R.id.textView38);
+        un.setTextSize(20);
+        un.setText(username);
 
         ImageButton logout = findViewById(R.id.imageButton8);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));

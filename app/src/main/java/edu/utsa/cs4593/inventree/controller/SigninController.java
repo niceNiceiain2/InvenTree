@@ -19,7 +19,7 @@ public class SigninController implements View.OnClickListener {
         String username = MainActivity.username.getText().toString();
         String password = MainActivity.password.getText().toString();
 
-        if ( (username.equals("iain")) || (username.equals("isabella")) )
+        if ( (username.equals("iainMGR")) || (username.equals("isabellaMGR")) )
         {
             if (password.equals("password")) {
                 if (Inventory.getInventory() == null) {
@@ -32,6 +32,17 @@ public class SigninController implements View.OnClickListener {
             else {
                 Toast toast = Toast.makeText(context, "Error wrong password " + username, duration);
                 toast.show();
+            }
+        }
+        else if ( (username.equals("iain")) || (username.equals("isabella")) )
+        {
+            if (password.equals("password")) {
+                if (Inventory.getInventory() == null) {
+                    Inventory.buildInventory(context);
+                }
+                Intent intent = new Intent(context, EmployeeHomepage.class);
+                intent.putExtra("username", username);
+                context.startActivity(intent);
             }
         }
         else {

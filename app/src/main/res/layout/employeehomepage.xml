@@ -8,13 +8,91 @@
     tools:context=".EmployeeHomepage">
 
     <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="464dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="71dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="207dp"
+        android:layout_marginEnd="186dp"
+        android:layout_marginBottom="464dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scriggle" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="26dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="285dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="557dp"
+        android:lineSpacingExtra="34sp"
+        android:text="!"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="101dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="557dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="142dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginEnd="227dp"
+        android:layout_marginBottom="557dp"
+        android:lineSpacingExtra="34sp"
+        android:text="Good Morning, "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
         android:id="@+id/imageButton8"
-        android:layout_width="86dp"
-        android:layout_height="65dp"
-        android:layout_marginStart="291dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="34dp"
-        android:layout_marginBottom="650dp"
+        android:layout_width="66dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="298dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="638dp"
+        android:saveEnabled="true"
+        android:scaleX=".5"
+        android:scaleY=".5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,49 +160,6 @@
                 tools:layout_editor_absoluteY="518dp" />
         </LinearLayout>
     </ScrollView>
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="57dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="46dp"
-        android:layout_marginTop="211dp"
-        android:layout_marginEnd="308dp"
-        android:layout_marginBottom="467dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_menu_search" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="48dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginTop="213dp"
-        android:layout_marginEnd="211dp"
-        android:layout_marginBottom="472dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/scriggle" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="41dp"
-        android:layout_marginTop="138dp"
-        android:layout_marginEnd="50dp"
-        android:layout_marginBottom="533dp"
-        android:text="Good Morning, Iain!"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView11"

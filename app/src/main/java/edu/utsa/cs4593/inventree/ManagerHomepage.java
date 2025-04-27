@@ -5,6 +5,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -31,6 +32,11 @@ public class ManagerHomepage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.managerhomepage);
+
+        String username = getIntent().getStringExtra("username");
+        TextView un = findViewById(R.id.textView37);
+        un.setTextSize(20);
+        un.setText(username);
 
         ImageButton logout = findViewById(R.id.imageButton7);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));
