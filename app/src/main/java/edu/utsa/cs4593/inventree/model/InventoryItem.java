@@ -3,12 +3,12 @@ package edu.utsa.cs4593.inventree.model;
 public class InventoryItem {
     private String name="";
     private String qty="";
-    private String lastAction="";
+    private String sku="";
 
-    public InventoryItem (String name, String qty, String lastAction) {
+    public InventoryItem (String name, String sku, String qty) {
         this.name = name;
         this.qty = qty;
-        this.lastAction = lastAction;
+        this.sku = sku;
     }
 
     public String getName() {
@@ -24,10 +24,11 @@ public class InventoryItem {
     public void settQty(String qty) {
         this.qty = qty;
     }
-    public String getLastAction() {
-        return lastAction;
+
+    public String getSku() {
+        return sku;
     }
-    public void setLastAction(String lastAction) {
-        this.lastAction = lastAction;
+    public void setSku(String sku) {
+        this.sku = sku;
     }
 }

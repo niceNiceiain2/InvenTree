@@ -11,7 +11,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import edu.utsa.cs4593.inventree.controller.CreateItemController;
 
 public class CreateActivity extends AppCompatActivity {
-    public static EditText itemName, quantity;
+    public static EditText itemName, quantity, sku;
+
+    public static String generateSKU(String categoryCode, String productCode, String variantCode) {
+        return categoryCode + "-" + productCode + "-" + variantCode;
+    }
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +38,16 @@ public class CreateActivity extends AppCompatActivity {
         Button submit = findViewById(R.id.CreateButton);
         itemName=(EditText)findViewById(R.id.ItemNameField);
         quantity=(EditText)findViewById(R.id.QuantityField);
+        sku=(EditText)findViewById(R.id.skuField);
         submit.setOnClickListener(new CreateItemController());
+
+        String categoryCode = "CLOTH";
+        String productCode = "TSHIRT";
+        String variantCode = "RED-S";
+        String numericCode = "100-01";
+
+        String sku = generateSKU(categoryCode, productCode, variantCode);
+        System.out.println("Generated SKU: " + sku);
+
     }
 }

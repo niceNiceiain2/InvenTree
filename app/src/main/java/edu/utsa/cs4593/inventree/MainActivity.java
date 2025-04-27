@@ -46,6 +46,5 @@ public class MainActivity extends AppCompatActivity {
         username=(EditText)findViewById(R.id.username);
         password=(EditText)findViewById(R.id.password);
         signin.setOnClickListener(new SigninController());
-
     }
 }

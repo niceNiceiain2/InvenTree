@@ -21,8 +21,9 @@ public class CreateItemController implements View.OnClickListener {
         Context context = view.getContext();
         String itemName = CreateActivity.itemName.getText().toString();
         String quantity = CreateActivity.quantity.getText().toString();
+        String sku = CreateActivity.sku.getText().toString();
 
-        InventoryItem i = new InventoryItem(itemName, quantity, quantity);
+        InventoryItem i = new InventoryItem(itemName, sku, quantity);
         Inventory.getInventory().addItem(i);
 
         Intent intent = new Intent(context, MainActivity.class);

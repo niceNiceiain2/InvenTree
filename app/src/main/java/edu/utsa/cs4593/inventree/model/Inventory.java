@@ -42,9 +42,9 @@ public class Inventory {
             StringTokenizer st = new StringTokenizer(line, ",");
             String name = st.nextToken();
             String quantity = st.nextToken();
-            String lastAction = st.nextToken();
+            String sku = st.nextToken();
 
-            InventoryItem ii = new InventoryItem( name, quantity, lastAction);
+            InventoryItem ii = new InventoryItem( name, sku, quantity);
 
             addItem(ii);
         }
