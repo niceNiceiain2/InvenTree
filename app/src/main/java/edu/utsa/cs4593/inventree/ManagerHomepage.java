@@ -9,6 +9,7 @@ import android.widget.TableLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.utsa.cs4593.inventree.controller.CreateItemScreenController;
+import edu.utsa.cs4593.inventree.controller.LogoutController;
 import edu.utsa.cs4593.inventree.controller.ManagerHomepageController;
 import edu.utsa.cs4593.inventree.controller.SigninController;
 
@@ -31,7 +32,10 @@ public class ManagerHomepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.managerhomepage);
 
-        ImageButton signin = findViewById(R.id.imageButton5);
-        signin.setOnClickListener(new CreateItemScreenController());
+        ImageButton logout = findViewById(R.id.imageButton7);
+        logout.setOnClickListener(new LogoutController(getApplicationContext()));
+
+        ImageButton submit = findViewById(R.id.imageButton5);
+        submit.setOnClickListener(new CreateItemScreenController());
     }
 }

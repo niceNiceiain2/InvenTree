@@ -7,6 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".EmployeeHomepage">
 
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="86dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="291dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="650dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logout" />
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="98dp"
@@ -25,10 +39,10 @@
         android:id="@+id/textView41"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="291dp"
-        android:layout_marginTop="78dp"
-        android:layout_marginEnd="71dp"
-        android:layout_marginBottom="631dp"
+        android:layout_marginStart="306dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="616dp"
         android:text="log out"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -139,20 +153,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="78dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="305dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="653dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
