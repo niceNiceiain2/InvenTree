@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.view.View;
 
 import edu.utsa.cs4593.inventree.CreateActivity;
+import edu.utsa.cs4593.inventree.EmployeeHomepage;
 import edu.utsa.cs4593.inventree.MainActivity;
 import edu.utsa.cs4593.inventree.MainActivity;
+import edu.utsa.cs4593.inventree.ManagerHomepage;
 import edu.utsa.cs4593.inventree.model.Inventory;
 import edu.utsa.cs4593.inventree.model.InventoryItem;
 
@@ -26,7 +28,13 @@ public class CreateItemController implements View.OnClickListener {
         InventoryItem i = new InventoryItem(itemName, sku, quantity);
         Inventory.getInventory().addItem(i);
 
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent;
+        String username = MainActivity.username.getText().toString();
+        if ( (username.equals("iainMGR")) || (username.equals("isabellaMGR")) )
+            intent = new Intent(context, ManagerHomepage.class);
+        else
+            intent = new Intent(context, EmployeeHomepage.class);
+        intent.putExtra("username", username);
         context.startActivity(intent);
     }
 }

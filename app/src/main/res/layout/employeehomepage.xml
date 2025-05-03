@@ -8,7 +8,7 @@
     tools:context=".EmployeeHomepage">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/searchButton"
         android:layout_width="71dp"
         android:layout_height="60dp"
         android:layout_marginStart="49dp"

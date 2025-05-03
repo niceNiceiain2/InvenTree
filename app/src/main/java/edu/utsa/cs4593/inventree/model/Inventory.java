@@ -48,25 +48,31 @@ public class Inventory {
 
             addItem(ii);
         }
-        System.out.println("Done!");
     }
-    public void saveInventory(Context c) { }
 
     public void addItem(InventoryItem ii) {
-        itemsMap.put(ii.getName(), ii);
+        itemsMap.put(ii.getSku(), ii);
     }
 
-    public void deleteItem(String name) {
-        itemsMap.remove(name);
+    public void deleteItem(String sku) {
+        itemsMap.remove(sku);
     }
 
-    public void updateItem(String name, InventoryItem ii) {
-        itemsMap.remove(name);
+    public void updateItem(String sku, InventoryItem ii) {
+        itemsMap.remove(sku);
         this.addItem(ii);
     }
 
-    public InventoryItem getItem(String name) {
-        return itemsMap.get(name);
+    public List<InventoryItem> searchBySKU(String sku) {
+        List<InventoryItem> newlist = new ArrayList<InventoryItem>();
+
+        for (InventoryItem item : itemsMap.values()) {
+            if (item.getSku().contains(sku)) {
+                newlist.add(item);
+            }
+        }
+
+        return newlist;
     }
     public InventoryItem getItem(int i) {
         List<InventoryItem> list = this.getList();
@@ -77,7 +83,7 @@ public class Inventory {
         return itemsMap.values().stream().collect(Collectors.toList());
     }
 
-    public int getSize() {
+    public int getNumberOfItems() {
         return itemsMap.size();
     }
 }

@@ -24,6 +24,7 @@ public class CreateActivity extends AppCompatActivity {
         TextView textView = (TextView) findViewById(R.id.TitleText);
         TextView itemNameText = (TextView) findViewById(R.id.ItemNameText);
         TextView quantityText = (TextView) findViewById(R.id.QuantityText);
+        TextView skuText = (TextView) findViewById(R.id.skuText);
 
         textView.setTextSize(40);
         textView.setTextColor(Color.BLUE);
@@ -35,19 +36,14 @@ public class CreateActivity extends AppCompatActivity {
         quantityText.setTextSize(20);
         quantityText.setTextColor(Color.BLUE);
 
+        skuText.setTextSize(20);
+        skuText.setTextColor(Color.BLUE);
+
         Button submit = findViewById(R.id.CreateButton);
         itemName=(EditText)findViewById(R.id.ItemNameField);
         quantity=(EditText)findViewById(R.id.QuantityField);
         sku=(EditText)findViewById(R.id.skuField);
         submit.setOnClickListener(new CreateItemController());
-
-        String categoryCode = "CLOTH";
-        String productCode = "TSHIRT";
-        String variantCode = "RED-S";
-        String numericCode = "100-01";
-
-        String sku = generateSKU(categoryCode, productCode, variantCode);
-        System.out.println("Generated SKU: " + sku);
 
     }
 }

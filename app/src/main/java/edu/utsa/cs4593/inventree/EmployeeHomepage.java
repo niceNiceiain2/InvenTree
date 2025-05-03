@@ -8,6 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import edu.utsa.cs4593.inventree.controller.LogoutController;
+import edu.utsa.cs4593.inventree.controller.SearchItemScreenController;
 
 /*
  * Iain Summerlin - tea587
@@ -32,6 +33,9 @@ public class EmployeeHomepage extends AppCompatActivity {
         TextView un = findViewById(R.id.textView38);
         un.setTextSize(20);
         un.setText(username);
+
+        ImageButton search = findViewById(R.id.searchButton);
+        search.setOnClickListener(new SearchItemScreenController(getApplicationContext()));
 
         ImageButton logout = findViewById(R.id.imageButton8);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));
