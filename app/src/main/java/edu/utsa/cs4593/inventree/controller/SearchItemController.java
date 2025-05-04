@@ -4,13 +4,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 
-import edu.utsa.cs4593.inventree.CreateActivity;
+import java.util.List;
+
+import edu.utsa.cs4593.inventree.SearchActivity;
 import edu.utsa.cs4593.inventree.MainActivity;
 import edu.utsa.cs4593.inventree.MainActivity;
+import edu.utsa.cs4593.inventree.SearchResultsActivity;
 import edu.utsa.cs4593.inventree.model.Inventory;
 import edu.utsa.cs4593.inventree.model.InventoryItem;
 
-public class CreateItemController implements View.OnClickListener {
+public class SearchItemController implements View.OnClickListener {
 
     /*
      * Sets the OnClick method and takes in the view.
@@ -19,14 +22,9 @@ public class CreateItemController implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         Context context = view.getContext();
-        String itemName = CreateActivity.itemName.getText().toString();
-        String quantity = CreateActivity.quantity.getText().toString();
-        String sku = CreateActivity.sku.getText().toString();
+        String sku = SearchActivity.sku.getText().toString();
 
-        InventoryItem i = new InventoryItem(itemName, sku, quantity);
-        Inventory.getInventory().addItem(i);
-
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent = new Intent(context, SearchResultsActivity.class);
         context.startActivity(intent);
     }
 }

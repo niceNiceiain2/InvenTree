@@ -1,14 +1,18 @@
 package edu.utsa.cs4593.inventree;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-//import edu.utsa.cs4593.inventree.controller.CreateItemScreenController;
+import edu.utsa.cs4593.inventree.controller.CreateItemScreenController;
 import edu.utsa.cs4593.inventree.controller.LogoutController;
+import edu.utsa.cs4593.inventree.controller.ManagerHomepageController;
+import edu.utsa.cs4593.inventree.controller.SigninController;
 
 /*
  * Iain Summerlin - tea587
@@ -37,7 +41,7 @@ public class ManagerHomepage extends AppCompatActivity {
         ImageButton logout = findViewById(R.id.imageButton7);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));
 
-//        ImageButton submit = findViewById(R.id.imageButton5);
-//        submit.setOnClickListener(new CreateItemScreenController());
+        ImageButton submit = findViewById(R.id.imageButton5);
+        submit.setOnClickListener(new CreateItemScreenController());
     }
 }
