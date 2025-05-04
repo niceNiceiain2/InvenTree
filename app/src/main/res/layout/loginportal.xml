@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
+
 
     <ImageView
-        android:id="@+id/textView"
+        android:id="@+id/invenTreeLogo"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="80dp"
         android:layout_marginTop="44dp"
-
         android:layout_marginEnd="88dp"
         android:layout_marginBottom="591dp"
+        android:contentDescription="@string/app_name_desc"
         android:scaleX="10"
         android:scaleY="10"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,12 +34,16 @@
         android:layout_marginTop="424dp"
         android:layout_marginEnd="122dp"
         android:layout_marginBottom="252dp"
+        android:autofillHints=""
         android:inputType="text"
-        android:text="iain"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.571"
+        tools:ignore="LabelFor" />
 
     <EditText
         android:id="@+id/password"
@@ -48,54 +53,43 @@
         android:layout_marginTop="492dp"
         android:layout_marginEnd="123dp"
         android:layout_marginBottom="194dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="textPassword"
-        android:text="password"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.666"
+        tools:ignore="LabelFor" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/logInButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="239dp"
         android:layout_marginTop="569dp"
         android:layout_marginEnd="84dp"
         android:layout_marginBottom="114dp"
-        android:text="Log in"
+        android:text="@string/login_button"
+        android:backgroundTint="#0B5D44"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="150dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="27dp"
-        android:layout_marginTop="586dp"
-        android:layout_marginEnd="220dp"
-        android:layout_marginBottom="126dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="frogot password"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/treeIcon"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="65dp"
         android:layout_marginTop="155dp"
         android:layout_marginEnd="66dp"
         android:layout_marginBottom="334dp"
+        android:contentDescription="@string/logo_image_desc"
         android:scaleX="5"
         android:scaleY="5"
         app:layout_constraintBottom_toBottomOf="parent"

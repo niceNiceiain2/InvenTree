@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">InvenTree</string>
+    <string name="login_button">Log in</string>
+    <string name="app_name">App Name</string>
 </resources>

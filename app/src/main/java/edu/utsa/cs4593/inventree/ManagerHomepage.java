@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import edu.utsa.cs4593.inventree.controller.CreateItemScreenController;
+//import edu.utsa.cs4593.inventree.controller.CreateItemScreenController;
 import edu.utsa.cs4593.inventree.controller.LogoutController;
 
 /*
@@ -37,7 +37,7 @@ public class ManagerHomepage extends AppCompatActivity {
         ImageButton logout = findViewById(R.id.imageButton7);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));
 
-        ImageButton submit = findViewById(R.id.imageButton5);
-        submit.setOnClickListener(new CreateItemScreenController());
+//        ImageButton submit = findViewById(R.id.imageButton5);
+//        submit.setOnClickListener(new CreateItemScreenController());
     }
 }
