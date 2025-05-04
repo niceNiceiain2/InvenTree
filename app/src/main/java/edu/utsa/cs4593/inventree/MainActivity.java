@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import edu.utsa.cs4593.inventree.controller.SigninController;
+import edu.utsa.cs4593.inventree.controller.UserAuthentication;
+import edu.utsa.cs4593.inventree.model.UserDatabase;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button signinButton;
 
 
-    public static EditText username, password;
+//    public static EditText username, password;
 
     @Override
     /*
@@ -28,23 +29,34 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginportal);
 
-        TextView textView = (TextView) findViewById(R.id.textView);
-        TextView usernameText = (TextView) findViewById(R.id.username);
-        TextView passwordText = (TextView) findViewById(R.id.password);
+//        TextView textView = (TextView) findViewById(R.id.textView);
+//        TextView usernameText = (TextView) findViewById(R.id.username);
+//        TextView passwordText = (TextView) findViewById(R.id.password);
+//
+//        textView.setTextSize(40);
+//        textView.setTextColor(Color.BLUE);
+//        textView.setWidth(5);
+//
+//        usernameText.setTextSize(20);
+//        usernameText.setTextColor(Color.BLUE);
+//
+//        passwordText.setTextSize(20);
+//        passwordText.setTextColor(Color.BLUE);
+//
+//        Button signin = findViewById(R.id.button);
+//        username=(EditText)findViewById(R.id.username);
+//        password=(EditText)findViewById(R.id.password);
+//        signin.setOnClickListener(new UserAuthentication());
 
-        textView.setTextSize(40);
-        textView.setTextColor(Color.BLUE);
-        textView.setWidth(5);
+        usernameEditText = findViewById(R.id.username);
+        passwordEditText = findViewById(R.id.password);
+        signinButton = findViewById(R.id.button);
 
-        usernameText.setTextSize(20);
-        usernameText.setTextColor(Color.BLUE);
-
-        passwordText.setTextSize(20);
-        passwordText.setTextColor(Color.BLUE);
-
-        Button signin = findViewById(R.id.button);
-        username=(EditText)findViewById(R.id.username);
-        password=(EditText)findViewById(R.id.password);
-        signin.setOnClickListener(new SigninController());
+        signinButton.setOnClickListener(view -> {
+            UserDatabase.loadUsers(MainActivity.this);
+            String username = usernameEditText.getText().toString().trim();
+            String password = passwordEditText.getText().toString().trim();
+            new UserAuthentication(this, username, password).authenticate();
+        });
     }
 }
