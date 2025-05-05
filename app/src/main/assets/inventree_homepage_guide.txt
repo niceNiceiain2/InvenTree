@@ -1,0 +1,16 @@
+>>>>>> USER GUIDE <<<<<<
+
++ Refer to this documentation for detailed explanations of each feature.
+
+1. SEARCH PRODUCT 
+- if you're looking for specific product details-such as availability, stock status, or location within the store-use the SEARCH PRODUCT feature.
+- after a successful search, you will receive product details including the product name, category, UPC number, SKU number, stock tag, on-hand quantity, location in the store, and any additional notes. 
+
+2. PROCESS DAMAGES
+- if an item is broken, expired, or otherwise unsellable, use the Process Damages feature to report it properly. This helps prevent inventory inaccuracies and reduces shrink loss(the loss of inventory due to theft, damage, or administrative errors). 
+
+3. EDIT PRODUCT DETAILS
+- if any product details in the store's inventory need to be updated, use the UPDATE PRODUCT DETAILS feature to modify one or more specific attributes. This ensures the store's inventory database remains accurate and current. 
+
+4. ADD TO INVENTORY
+- To add a new product to the store's inventory database, use the ADD NEW PRODUCT feature. This allows you to enter the product along with all relevant details" 
