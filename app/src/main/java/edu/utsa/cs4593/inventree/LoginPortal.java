@@ -1,16 +1,16 @@
-package edu.utsa.cs4593.inventree.controller;
+package edu.utsa.cs4593.inventree;
 import android.content.Context;
 import android.content.Intent;
+import android.util.Log;
 import android.widget.Toast;
 
-import edu.utsa.cs4593.inventree.EmployeeHomepage;
-import edu.utsa.cs4593.inventree.ManagerHomepage;
+import edu.utsa.cs4593.inventree.controller.ManagerHomepageController;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
 
-public class LoginPortalController {
+public class LoginPortal {
     private Context context;
 
-    public LoginPortalController(Context context){
+    public LoginPortal(Context context){
         this.context = context;
     }
 
@@ -20,9 +20,10 @@ public class LoginPortalController {
         if(UserDatabase.isValidUser(username,password)){
             String role = UserDatabase.getRole(username);
             if (role.equalsIgnoreCase("employee")) {
-                context.startActivity(new Intent(context, EmployeeHomepage.class));
+//              context.startActivity(new Intent(context, EmployeeHomepage.class));
+                Log.d("alternate route", "take to employee page");
             }else{
-                context.startActivity(new Intent(context, ManagerHomepage.class));
+                context.startActivity(new Intent(context, ManagerHomepageController.class));
             }
         }else{
             Toast.makeText(context, "Invalid login credentials", Toast.LENGTH_SHORT).show();

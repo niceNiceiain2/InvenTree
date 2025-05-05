@@ -2,4 +2,9 @@
 <resources>
     <string name="logo_image_desc">App logo Tree and Store</string>
     <string name="app_name_desc">App Name InvenTree</string>
+    <string name="logout_button_desc">Logout Button</string>
+    <string name="search_product_button_desc">Magnifying glass icon for Search Product Button</string>
+    <string name="process_damages_button_desc">broken item icon for Process Damages Button</string>
+    <string name="edit_product_details_desc">pencil on page icon for Edit Product Details Button</string>
+    <string name="add_to_inventory_desc">box with plus icon for Add to Inventory Button</string>
 </resources>

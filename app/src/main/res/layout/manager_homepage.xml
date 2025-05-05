@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="350dp"
+        android:layout_height="340dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="162dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="insideOverlay"
+        android:text=""
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033">
+
+
+        <TextView
+            android:id="@+id/homepageGuide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<!--            android:text="">-->
+
+        </TextView>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/search_button"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="317dp"
+        android:background="@drawable/round_button"
+        android:contentDescription="@string/search_product_button_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305"
+        app:srcCompat="@drawable/search_product_icon" />
+
+    <ImageButton
+        android:id="@+id/process_damages_button"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginEnd="219dp"
+        android:background="@drawable/round_button"
+        android:contentDescription="@string/process_damages_button_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.305"
+        app:srcCompat="@drawable/process_damages_icon" />
+
+    <ImageButton
+        android:id="@+id/edit_product_details_button"
+        android:layout_width="75dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="222dp"
+        android:layout_marginEnd="114dp"
+        android:background="@drawable/round_button"
+        android:contentDescription="@string/edit_product_details_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
+        app:srcCompat="@drawable/edit_product_details_icon" />
+
+    <ImageButton
+        android:id="@+id/add_to_inventory_button"
+        android:layout_width="66dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginEnd="14dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/add_to_inventory_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
+        app:srcCompat="@drawable/add_to_inventory_icon" />
+
+    <TextView
+        android:id="@+id/search_product_text"
+        android:layout_width="70dp"
+        android:layout_height="43dp"
+        android:text="@string/search_product"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <TextView
+        android:id="@+id/process_damages_text"
+        android:layout_width="80dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="129dp"
+        android:layout_marginEnd="219dp"
+        android:text="@string/process_damages"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <TextView
+        android:id="@+id/edit_product_details_text"
+        android:layout_width="81dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginEnd="106dp"
+        android:text="@string/edit_product"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.417" />
+
+    <TextView
+        android:id="@+id/add_to_inventory_text"
+        android:layout_width="66dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="319dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/add_to_inventory"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.423" />
+
+    <TextView
+        android:id="@+id/logOutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="334dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="621dp"
+        android:text="@string/log_out_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/logOutButton"
+        android:layout_width="79dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="651dp"
+        android:contentDescription="@string/logout_button_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.611"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/logout" />
+
+<!-- TODO: add the user firstname after "Hello, " for the greeting-->
+<!--    <TextView-->
+<!--        android:id="@+id/userFirstName"-->
+<!--        android:layout_width="181dp"-->
+<!--        android:layout_height="33dp"-->
+<!--        android:layout_marginTop="125dp"-->
+<!--        android:layout_marginBottom="574dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/userGreeting"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.333" />-->
+
+    <TextView
+        android:id="@+id/userGreeting"
+        android:layout_width="63dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="212dp"
+        android:layout_marginBottom="576dp"
+        android:lineSpacingExtra="34sp"
+        android:text="@string/user_greeting"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

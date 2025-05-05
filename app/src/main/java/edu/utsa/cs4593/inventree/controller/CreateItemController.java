@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.view.View;
 
 import edu.utsa.cs4593.inventree.CreateActivity;
-import edu.utsa.cs4593.inventree.MainActivity;
-import edu.utsa.cs4593.inventree.MainActivity;
 import edu.utsa.cs4593.inventree.model.Inventory;
 import edu.utsa.cs4593.inventree.model.InventoryItem;
 
@@ -26,7 +24,7 @@ public class CreateItemController implements View.OnClickListener {
         InventoryItem i = new InventoryItem(itemName, sku, quantity);
         Inventory.getInventory().addItem(i);
 
-        Intent intent = new Intent(context, MainActivity.class);
+        Intent intent = new Intent(context, CreateActivity.class);
         context.startActivity(intent);
     }
 }

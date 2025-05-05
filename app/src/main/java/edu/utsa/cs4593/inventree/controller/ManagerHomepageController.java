@@ -1,24 +1,57 @@
-//package edu.utsa.cs4593.inventree.controller;
-//
-//import android.content.Context;
-//import android.content.Intent;
-//import android.view.View;
-//import android.widget.Toast;
-//
-//import edu.utsa.cs4593.inventree.MainActivity;
-//import edu.utsa.cs4593.inventree.ManagerHomepage;
-//
-//public class ManagerHomepageController implements View.OnClickListener {
-//
-//    @Override
-//    public void onClick(View view) {
-//        Context context = view.getContext();
-//        int duration = Toast.LENGTH_SHORT;
-//        String username = MainActivity.username.getText().toString();
-//        String password = MainActivity.password.getText().toString();
-//
-//        Intent intent = new Intent(context, ManagerHomepage.class);
-//        intent.putExtra("username", username);
-//        context.startActivity(intent);
-//    }
-//}
+package edu.utsa.cs4593.inventree.controller;
+
+import android.os.Bundle;
+import android.widget.ImageButton;
+import android.widget.TableLayout;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+import edu.utsa.cs4593.inventree.R;
+import edu.utsa.cs4593.inventree.controller.LogoutController;
+import edu.utsa.cs4593.inventree.controller.ManagerHomepageController;
+
+
+/*
+ * Iain Summerlin - tea587
+ *
+ */
+public class ManagerHomepageController extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        /*
+         * sets the manager homepage layout and the features
+         * that are available to use for a User with a role Manager
+         */
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.manager_homepage);
+
+        TextView userGuideTextView = findViewById(R.id.homepageGuide);
+        String homepageGuideText = loadTextFromAssets("inventree_homepage_guide.txt");
+        userGuideTextView.setText(homepageGuideText);
+
+        ImageButton logout = findViewById(R.id.logOutButton);
+        logout.setOnClickListener(new LogoutController(getApplicationContext()));
+    }
+
+    private String loadTextFromAssets(String filename){
+        StringBuilder text = new StringBuilder();
+        try {
+            InputStream is = getAssets().open(filename);
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            String line;
+            while((line = reader.readLine())!=null){
+                text.append(line).append("\n");
+            }
+            reader.close();
+        } catch(IOException e){
+            e.printStackTrace();
+        }
+        return text.toString();
+    }
+}
