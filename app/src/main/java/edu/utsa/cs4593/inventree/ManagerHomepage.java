@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
 
 import edu.utsa.cs4593.inventree.R;
 
-public class ManagerHomepage extends AppCompatActivity{
+public class ManagerHomepage{
 
 }
 

@@ -7,4 +7,10 @@
     <string name="process_damages_button_desc">broken item icon for Process Damages Button</string>
     <string name="edit_product_details_desc">pencil on page icon for Edit Product Details Button</string>
     <string name="add_to_inventory_desc">box with plus icon for Add to Inventory Button</string>
+    <string name="tap_to_scan_icon_desc">image of camera in box</string>
+    <string name="enter_product_id_icon_desc">image of a keyboard icon</string>
+    <string name="filter_search_icon_desc">image of checkboxes</string>
+    <string name="for_customer_search_icon_desc">image of two peoples profiles</string>
+    <string name="home_image_logo_desc">image of invenTree logo</string>
+    <string name="barcode_tap_button_desc">image of barcode lines</string>
 </resources>

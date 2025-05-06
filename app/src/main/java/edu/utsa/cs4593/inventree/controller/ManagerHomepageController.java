@@ -1,8 +1,9 @@
 package edu.utsa.cs4593.inventree.controller;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
-import android.widget.TableLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,14 +13,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import edu.utsa.cs4593.inventree.R;
-import edu.utsa.cs4593.inventree.controller.LogoutController;
-import edu.utsa.cs4593.inventree.controller.ManagerHomepageController;
 
 
-/*
- * Iain Summerlin - tea587
- *
- */
+
 public class ManagerHomepageController extends AppCompatActivity {
 
     @Override
@@ -37,6 +33,22 @@ public class ManagerHomepageController extends AppCompatActivity {
 
         ImageButton logout = findViewById(R.id.logOutButton);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));
+
+        ImageButton searchProduct = findViewById(R.id.search_button);
+        searchProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ManagerHomepageController.this, SearchProductController.class);
+                startActivity(intent);
+            }
+        });
+
+        /*
+         * TODO: ADD IMAGEBUTTON ON CLICK LISTENERS AND INTENTS TO START NEW ACTIVITY FOR
+         *  - PROCESS DAMAGES ACTIVITY
+         *  - EDIT PRODUCT DETAILS ACTIVITY
+         *  - ADD TO INVENTORY ACTIVITY
+         */
     }
 
     private String loadTextFromAssets(String filename){

@@ -7,4 +7,11 @@
     <string name="process_damages">Process Damages</string>
     <string name="edit_product">Edit Product Details</string>
     <string name="add_to_inventory">Add to Inventory</string>
+    <string name="for_customer_search_text">For Customer Search</string>
+    <string name="filter_search_text">Filter Search</string>
+    <string name="tap_to_scan_text">Tap to Scan</string>
+    <string name="enter_product_id_text">Enter Product ID</string>
+    <string name="scan_barcode_text">Tap the barcode to use camera and scan</string>
+    <string name="search_button">SEARCH</string>
+    <string name="search_bar_hint">Enter SKU or UPC number</string>
 </resources>

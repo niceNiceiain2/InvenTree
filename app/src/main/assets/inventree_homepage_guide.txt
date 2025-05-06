@@ -4,7 +4,7 @@
 
 1. SEARCH PRODUCT 
 - if you're looking for specific product details-such as availability, stock status, or location within the store-use the SEARCH PRODUCT feature.
-- after a successful search, you will receive product details including the product name, category, UPC number, SKU number, stock tag, on-hand quantity, location in the store, and any additional notes. 
+- after a successful search, you will receive product details including the product name, price, category, UPC number, SKU number, stock tag, on-hand quantity, location in the store, and any additional notes.
 
 2. PROCESS DAMAGES
 - if an item is broken, expired, or otherwise unsellable, use the Process Damages feature to report it properly. This helps prevent inventory inaccuracies and reduces shrink loss(the loss of inventory due to theft, damage, or administrative errors). 

@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -31,7 +30,7 @@ public class Inventory {
         InputStream inStream;
 
         try {
-            inStream = am.open("data.csv");
+            inStream = am.open("product_details.csv");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

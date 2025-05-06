@@ -5,54 +5,77 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="78dp"
-        android:layout_height="53dp"
+    <ImageButton
+        android:id="@+id/logOutButton"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/logout_button_desc"
+        android:scaleType="centerCrop"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/logout"
-        tools:layout_editor_absoluteX="327dp"
-        tools:layout_editor_absoluteY="25dp" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="98dp"
-        android:layout_height="110dp"
-        app:srcCompat="@drawable/title"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="1dp" />
-
-    <TextView
-        android:id="@+id/textView41"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="log out"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="327dp"
-        tools:layout_editor_absoluteY="78dp" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="scan the barcode"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="113dp"
-        tools:layout_editor_absoluteY="418dp" />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
-        android:id="@+id/imageButton19"
+        android:id="@+id/home_image_logo"
+        android:layout_width="84dp"
+        android:layout_height="104dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/home_image_logo_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.051"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004"
+        app:srcCompat="@drawable/title" />
+
+    <TextView
+        android:id="@+id/log_out_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_out_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.932"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <!--   TODO: CHANGE THE DRAWABLE SCANBARCODE IMAGE TO SOMETHING NICER-->
+    <TextView
+        android:id="@+id/scan_barcode_text"
+        android:layout_width="250dp"
+        android:layout_height="84dp"
+        android:text="@string/scan_barcode_text"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <ImageButton
+        android:id="@+id/barcode_tap_button"
         android:layout_width="100dp"
         android:layout_height="37dp"
-        app:srcCompat="@drawable/scanbarcode"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="463dp" />
+        android:contentDescription="@string/barcode_tap_button_desc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/scanbarcode" />
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="365dp"
-        android:layout_height="276dp"
-        app:srcCompat="@drawable/pic1"
-        tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="128dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
