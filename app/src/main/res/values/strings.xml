@@ -14,4 +14,17 @@
     <string name="scan_barcode_text">Tap the barcode to use camera and scan</string>
     <string name="search_button">SEARCH</string>
     <string name="search_bar_hint">Enter SKU or UPC number</string>
+    <string name="product_name_text">Name: </string>
+    <string name="product_price_text">Price: </string>
+    <string name="product_category_text">Categroy: </string>
+    <string name="product_upc_text">UPC: </string>
+    <string name="product_sku_text">SKU: </string>
+    <string name="product_stock_text">Stock Availability: </string>
+    <string name="product_count_text">On Hand Count: </string>
+    <string name="product_location_text">Location: </string>
+    <string name="product_notes_text">Notes: </string>
+    <string name="apply_button">apply</string>
+    <string name="select_category_text">Select Category(s)</string>
+    <string name="select_stocktag_text">Select Availability</string>
+    <string name="select_location_text">Select Location</string>
 </resources>

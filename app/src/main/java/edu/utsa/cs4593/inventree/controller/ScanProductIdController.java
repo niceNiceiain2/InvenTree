@@ -6,10 +6,18 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.camera.view.PreviewView;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+
+import com.google.mlkit.vision.barcode.BarcodeScanner;
+import com.google.mlkit.vision.barcode.BarcodeScannerOptions;
+import com.google.mlkit.vision.barcode.BarcodeScanning;
+import com.google.mlkit.vision.barcode.common.Barcode;
+
+import java.util.concurrent.ExecutorService;
 
 import edu.utsa.cs4593.inventree.R;
 
@@ -30,6 +38,7 @@ public class ScanProductIdController extends AppCompatActivity {
         // Check and request camera permission if not granted
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, CAMERA_PERMISSION_REQUEST_CODE);
+
         } else {
             startCameraPreviewOrBarcodeScanner();
         }
@@ -60,4 +69,5 @@ public class ScanProductIdController extends AppCompatActivity {
         // TODO: Initialize camera preview or barcode scanning logic here
         Toast.makeText(this, "Camera permission granted. Ready to scan.", Toast.LENGTH_SHORT).show();
     }
+
 }

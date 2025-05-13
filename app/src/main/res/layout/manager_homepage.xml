@@ -8,29 +8,25 @@
 
     <ScrollView
         style="@android:style/Widget.DeviceDefault.Light.ScrollView"
-        android:layout_width="350dp"
-        android:layout_height="340dp"
-        android:layout_marginStart="38dp"
-        android:layout_marginTop="380dp"
-        android:layout_marginEnd="78dp"
-        android:layout_marginBottom="162dp"
+        android:layout_width="346dp"
+        android:layout_height="312dp"
         android:layout_weight="1"
         android:scrollbarStyle="insideOverlay"
         android:text=""
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033">
+        app:layout_constraintVertical_bias="0.943">
 
 
         <TextView
             android:id="@+id/homepageGuide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-<!--            android:text="">-->
+            <!--            android:text="">-->
 
         </TextView>
     </ScrollView>
@@ -164,39 +160,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.423" />
 
-    <TextView
-        android:id="@+id/logOutText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="334dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="621dp"
-        android:text="@string/log_out_text"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/logOutButton"
-        android:layout_width="79dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="9dp"
-        android:layout_marginBottom="651dp"
-        android:contentDescription="@string/logout_button_desc"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.611"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.25"
-        app:srcCompat="@drawable/logout" />
-
-<!-- TODO: add the user firstname after "Hello, " for the greeting-->
+    <!-- TODO: add the user firstname after "Hello, " for the greeting-->
 <!--    <TextView-->
 <!--        android:id="@+id/userFirstName"-->
 <!--        android:layout_width="181dp"-->
@@ -209,6 +173,34 @@
 <!--        app:layout_constraintStart_toEndOf="@+id/userGreeting"-->
 <!--        app:layout_constraintTop_toTopOf="parent"-->
 <!--        app:layout_constraintVertical_bias="0.333" />-->
+
+    <TextView
+        android:id="@+id/logOutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_out_text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <ImageButton
+        android:id="@+id/logOutButton"
+        android:layout_width="79dp"
+        android:layout_height="66dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/logout_button_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.097"
+        app:srcCompat="@drawable/logout" />
 
     <TextView
         android:id="@+id/userGreeting"

@@ -13,76 +13,25 @@ import java.util.stream.Collectors;
 
 
 public class Inventory {
-    private HashMap<String, InventoryItem> itemsMap = new HashMap<String, InventoryItem>();
-    private static Inventory inventory = null;
+    private List<Product> products;
 
-    public static Inventory getInventory() {
-        return inventory;
+    public Inventory(List<Product> products){
+        this.products = products;
     }
 
-    public static void buildInventory(Context c) {
-        inventory = new Inventory();
-        inventory.loadInventory(c);
-    }
-
-    public void loadInventory(Context c) {
-        AssetManager am = c.getAssets();
-        InputStream inStream;
-
-        try {
-            inStream = am.open("product_details.csv");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        Scanner scr = new Scanner(inStream);
-        while (scr.hasNext()) {
-            String line = scr.nextLine();
-            StringTokenizer st = new StringTokenizer(line, ",");
-            String name = st.nextToken();
-            String quantity = st.nextToken();
-            String sku = st.nextToken();
-
-            InventoryItem ii = new InventoryItem( name, sku, quantity);
-
-            addItem(ii);
-        }
-    }
-
-    public void addItem(InventoryItem ii) {
-        itemsMap.put(ii.getSku(), ii);
-    }
-
-    public void deleteItem(String sku) {
-        itemsMap.remove(sku);
-    }
-
-    public void updateItem(String sku, InventoryItem ii) {
-        itemsMap.remove(sku);
-        this.addItem(ii);
-    }
-
-    public List<InventoryItem> searchBySKU(String sku) {
-        List<InventoryItem> newlist = new ArrayList<InventoryItem>();
-
-        for (InventoryItem item : itemsMap.values()) {
-            if (item.getSku().contains(sku)) {
-                newlist.add(item);
+    public Product searchById(String query){
+        for(Product product : products){
+            if(product.getUpc().equals(query) || product.getSku().equals(query)){
+                return product;
             }
         }
-
-        return newlist;
-    }
-    public InventoryItem getItem(int i) {
-        List<InventoryItem> list = this.getList();
-        return list.get(i);
+        return null;
     }
 
-    public List<InventoryItem> getList() {
-        return itemsMap.values().stream().collect(Collectors.toList());
-    }
-
-    public int getNumberOfItems() {
-        return itemsMap.size();
-    }
+//    public List<Product> loadProducts(){
+//        List<Product> products = new ArrayList<>();
+//        products.add(new Product("College Textbook: Math 101","$89.99","Textbooks","123456789012","STRE-0000","In Stock","50","A3","N/A"));
+//        products.add(new Product("Blue Ink Pen","$1.50","School Supplies","889977665544","STRE-0005","In Stock","200","F3","N/A"));
+//        return products;
+//    }
 }

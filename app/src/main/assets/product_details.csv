@@ -1,4 +1,30 @@
-Pencils,7500,123abc
-Crayons,1500,345abc
-Erasers,1600,678abc
-Paper,600,123def
+College Textbook: "Math 101",$89.99,Textbooks,123456789012,STRE-0000,In Stock,50,A3,N/A
+Graphing Calculator TI-84 Plus,$120.00,Technology,654321987654,STRE-0001,Out Of Stock,0,B5,N/A
+University Hoodie,$34.99,Apparel,987654321001,STRE-0002,In Stock,25,C2,N/A
+College Backpack,$49.99,Apparel,112233445566,STRE-0003,In Stock,35,D4,N/A
+Study Notebook,$3.99,School Supplies,223344556677,STRE-0004,In Stock,100,E1,N/A
+Blue Ink Pen,$1.50,School Supplies,889977665544,STRE-0005,In Stock,200,F3,N/A
+Dorm Shower Caddy,$9.99,Dorm Essentials,334455667788,STRE-0006,Out Of Stock,0,G1,N/A
+Laptop Sleeve,$19.99,Technology,667788990011,STRE-0007,In Stock,40,H2,N/A
+Student Planner,$7.99,School Supplies,776655443322,STRE-0008,In Stock,60,A1,N/A
+Organic Energy Drink,$2.99,Convenience,998877665544,STRE-0009,In Stock,120,B3,N/A
+Student ID Lanyard,$4.99,Apparel,101112131415,STRE-0010,In Stock,150,D6,N/A
+Pocket Calculator,$8.99,Technology,556677889900,STRE-0011,In Stock,70,C3,N/A
+Whiteboard Markers(set of 4),$6.50,School Supplies,223344556678,STRE-0012,In Stock,50,F4,N/A
+Yoga Mat,$19.99,Dorm Essentials,123987654321,STRE-0013,In Stock,30,G5,N/A
+Wireless Mouse,$15.99,Technology,667788990012,STRE-0014,In Stock,44,B4,N/A
+"Introduction to Psychology",$45.00,Textbooks,445566778899,STRE-0015,In Stock,80,A2,N/A
+Coffee Mug(University Logo),$12.99,Convience,334455667799,STRE-0016,In Stock,60,E2,N/A
+USB Flash Drive (32GB),$11.99,Technology,112233445578,STRE-0017,In Stock,97,H1,N/A
+Dry Erase Board,$14.99,School Supplies,223344556788,STRE-0018,In Stock,39,D7,N/A
+School Spirit Water Bottle,$8.99,Apparel,443322556677,STRE-0019,In Stock,50,F6,N/A
+Poster of Campus Landmarks,$9.99,Miscellaneous,998877112233,STRE-0020,Out Of Stock,0,C6,N/A
+"Advanced Calculus",$65.00,Textbooks,556667788901,STRE-0021,In Stock,40,A1,N/A
+"Intro to Sociology",$48.00,Textbooks,667788990000,STRE-0022,In Stock,70,B2,N/A
+Anti-Stress Ball,$5.99,Miscellaneous,778899001122,STRE-0023,In Stock,84,G3,N/A
+Travel Pillow,$15.00,Dorm Essentials,334455667801,STRE-0024,In Stock,10,F1,N/A
+Compact Mirror,$4.99,Miscellaneous,223344556668,STRE-0025,In Stock,120,D4,N/A
+Bluetooth Speaker,$39.99,Technology,998877665533,STRE-0026,In Stock,48,E3,N/A
+Desk Organizer,$12.99,Dorm Essentials,445566778800,STRE-0027,In Stock,80,C4,N/A
+College T-Shirt Graphic,$19.99,Apparel,556677889012,STRE-0028,In Stock,129,A6,N/A
+"Art History",$59.00,Textbooks,223344556670,STRE-0029,In Stock,58,D2,N/A

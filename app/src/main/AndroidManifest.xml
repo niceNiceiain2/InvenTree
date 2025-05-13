@@ -17,7 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.InvenTree"
+        android:hardwareAccelerated="false"
         tools:targetApi="31">
+
         <activity
             android:name=".CameraPreview"
             android:exported="false" />
@@ -38,9 +40,9 @@
         <!-- android:name=".ManagerHomepage" -->
         <!-- android:exported="true"> -->
         <!-- </activity> -->
-        <activity
-            android:name=".CreateActivity"
-            android:exported="true"></activity>
+<!--        <activity-->
+<!--            android:name=".CreateActivity"-->
+<!--            android:exported="true"></activity>-->
         <activity
             android:name=".controller.SearchProductController"
             android:exported="true" />
@@ -50,6 +52,7 @@
         <activity
             android:name=".controller.SearchProductIdController"
             android:exported="true" />
+        <activity android:name=".controller.IndividualProductReturnController" />
     </application>
 
 </manifest>

@@ -6,93 +6,129 @@
     android:layout_height="match_parent">
 
     <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="504dp" />
+        android:id="@+id/stockTag_dropdown"
+        android:layout_width="371dp"
+        android:layout_height="26dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="312dp" />
+        android:id="@+id/category_dropdown"
+        android:layout_width="386dp"
+        android:layout_height="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.368" />
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="69dp"
-        android:layout_height="51dp"
-        app:srcCompat="@drawable/logout"
-        tools:layout_editor_absoluteX="301dp"
-        tools:layout_editor_absoluteY="30dp" />
+    <ImageButton
+        android:id="@+id/logOutButton"
+        android:layout_width="77dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/logout_button_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
+        app:srcCompat="@drawable/logout" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="98dp"
-        android:layout_height="110dp"
-        app:srcCompat="@drawable/title"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="5dp" />
+    <ImageButton
+        android:id="@+id/home_image_logo"
+        android:layout_width="86dp"
+        android:layout_height="99dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/home_image_logo_desc"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088"
+        app:srcCompat="@drawable/title" />
 
     <TextView
-        android:id="@+id/textView33"
-        android:layout_width="83dp"
-        android:layout_height="42dp"
-        android:text="No matches found"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="153dp"
-        tools:layout_editor_absoluteY="588dp" />
-
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="222dp"
-        android:layout_height="44dp"
-        android:text="Select product location"
+        android:id="@+id/select_location_text"
+        android:layout_width="288dp"
+        android:layout_height="33dp"
+        android:text="@string/select_location_text"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="451dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
 
     <TextView
-        android:id="@+id/textView21"
-        android:layout_width="236dp"
-        android:layout_height="55dp"
-        android:text="Select product avaiability"
+        android:id="@+id/select_stockTag_text"
+        android:layout_width="282dp"
+        android:layout_height="29dp"
+        android:text="@string/select_stocktag_text"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="21dp"
-        tools:layout_editor_absoluteY="349dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
 
     <TextView
-        android:id="@+id/textView20"
-        android:layout_width="220dp"
-        android:layout_height="54dp"
-        android:text="Select product cateogry"
+        android:id="@+id/select_category_text"
+        android:layout_width="282dp"
+        android:layout_height="33dp"
+        android:text="@string/select_category_text"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="250dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.147"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.312" />
 
     <TextView
-        android:id="@+id/textView35"
+        android:id="@+id/logOutText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="log out"
+        android:text="@string/log_out_text"
         android:textSize="16sp"
-        tools:layout_editor_absoluteX="294dp"
-        tools:layout_editor_absoluteY="93dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
 
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="apply"
-        android:textSize="34sp"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="160dp" />
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_width="145dp"
+        android:layout_height="38dp"
+        android:text="@string/apply_button"
+        android:textSize="16sp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705" />
 
     <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="414dp" />
+        android:id="@+id/location_dropdown"
+        android:layout_width="380dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.677"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.637" />
 </androidx.constraintlayout.widget.ConstraintLayout>

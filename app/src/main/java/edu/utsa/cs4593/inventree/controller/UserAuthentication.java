@@ -24,9 +24,9 @@ public class UserAuthentication{
 
     public void authenticate(){
         if(UserDatabase.isValidUser(username,password)){
-            if(Inventory.getInventory() == null){
-                Inventory.buildInventory(context);
-            }
+//            if(Inventory.getInventory() == null){
+//                Inventory.buildInventory(context);
+//            }
 
             String role = UserDatabase.getRole(username);
 
