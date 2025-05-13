@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 
 import edu.utsa.cs4593.inventree.ManagerHomepage;
 import edu.utsa.cs4593.inventree.R;
+import edu.utsa.cs4593.inventree.model.UserDatabase;
 
 public class SearchProductController extends AppCompatActivity {
 
@@ -61,6 +62,18 @@ public class SearchProductController extends AppCompatActivity {
          *  USER SHOULD BE BROUGHT TO THE MANAGER HOMEPAGE OR THE EMPLOYEE
          *  HOMEPAGE
          */
+
+        String username = getIntent().getStringExtra("username");
+        String userRole = UserDatabase.getRole(username);
+
+        if ("Manager".equalsIgnoreCase(userRole)) {
+            Intent intent = new Intent(this, ManagerHomepageController.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, ManagerHomepageController.class);
+            startActivity(intent);
+        }
+
         ImageButton homeImageLogoButton = findViewById(R.id.home_image_logo);
         homeImageLogoButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,6 +9,7 @@ import android.widget.ImageButton;
 
 import edu.utsa.cs4593.inventree.ManagerHomepage;
 import edu.utsa.cs4593.inventree.R;
+import edu.utsa.cs4593.inventree.model.UserDatabase;
 
 public class SearchProductIdController extends AppCompatActivity {
 
@@ -41,10 +42,25 @@ public class SearchProductIdController extends AppCompatActivity {
          * to take user back to the homepage when the home image logo is
          * clicked
          *
+         *
+         *
          * TODO: CHANGE THIS TO INCLUDE A CONDITIONAL DETERMINING IF THE
          *  USER SHOULD BE BROUGHT TO THE MANAGER HOMEPAGE OR THE EMPLOYEE
          *  HOMEPAGE
          */
+
+        String username = getIntent().getStringExtra("username");
+        String userRole = UserDatabase.getRole(username);
+
+        if ("Manager".equalsIgnoreCase(userRole)) {
+            Intent intent = new Intent(this, ManagerHomepageController.class);
+            startActivity(intent);
+        } else {
+            Intent intent = new Intent(this, ManagerHomepageController.class);
+            startActivity(intent);
+        }
+
+
         ImageButton homeImageLogoButton = findViewById(R.id.home_image_logo);
         homeImageLogoButton.setOnClickListener(new View.OnClickListener() {
             @Override
