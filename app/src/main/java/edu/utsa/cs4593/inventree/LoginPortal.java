@@ -22,8 +22,12 @@ public class LoginPortal {
             if (role.equalsIgnoreCase("employee")) {
 //              context.startActivity(new Intent(context, EmployeeHomepage.class));
                 Log.d("alternate route", "take to employee page");
-            }else{
-                context.startActivity(new Intent(context, ManagerHomepageController.class));
+            }
+            else
+            {
+                Intent intent = new Intent(context, ManagerHomepageController.class);
+                intent.putExtra("username", username);
+                context.startActivity(intent);
             }
         }else{
             Toast.makeText(context, "Invalid login credentials", Toast.LENGTH_SHORT).show();
