@@ -9,6 +9,13 @@ import java.util.List;
 public class UserDatabase {
     private static List<User> users = new ArrayList<>();
 
+    private static String currentUser = "";
+    public static String getCurrentUser() {
+        return currentUser;
+    }
+    public static void setCurrentUser(String currentUser) {
+        UserDatabase.currentUser = currentUser;
+    }
     public static void loadUsers(Context context){
         try{
             InputStream input = context.getAssets().open("user_database.csv");

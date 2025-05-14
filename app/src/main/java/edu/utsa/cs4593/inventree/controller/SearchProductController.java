@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
+import edu.utsa.cs4593.inventree.EmployeeHomepage;
 import edu.utsa.cs4593.inventree.R;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
 
@@ -62,14 +63,14 @@ public class SearchProductController extends AppCompatActivity {
          *  HOMEPAGE
          */
 
-        String username = getIntent().getStringExtra("username");
+        String username = UserDatabase.getCurrentUser();
         String userRole = UserDatabase.getRole(username);
 
-        if ("Manager".equalsIgnoreCase(userRole)) {
+        if ("manager".equalsIgnoreCase(userRole)) {
             Intent intent = new Intent(this, ManagerHomepageController.class);
             startActivity(intent);
         } else {
-            Intent intent = new Intent(this, ManagerHomepageController.class);
+            Intent intent = new Intent(this, EmployeeHomepage.class);
             startActivity(intent);
         }
 

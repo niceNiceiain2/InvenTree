@@ -7,13 +7,14 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import edu.utsa.cs4593.inventree.controller.ForCustomerSearchController;
 import edu.utsa.cs4593.inventree.controller.LogoutController;
+import edu.utsa.cs4593.inventree.controller.SearchItemScreenController;
 import edu.utsa.cs4593.inventree.model.User;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
 //import edu.utsa.cs4593.inventree.controller.SearchItemScreenController;
 
 /*
- * Iain Summerlin - tea587
  *
  *
  */
@@ -31,7 +32,7 @@ public class EmployeeHomepage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.employeehomepage);
 
-        String username = getIntent().getStringExtra("username");
+        String username = UserDatabase.getCurrentUser();
         User currentUser = UserDatabase.findUser(username);
         TextView un = findViewById(R.id.employeeName);
         un.setTextSize(20);
@@ -39,7 +40,7 @@ public class EmployeeHomepage extends AppCompatActivity {
         un.setText(name);
 
         ImageButton search = findViewById(R.id.searchButton);
-        //search.setOnClickListener(new SearchItemScreenController(getApplicationContext()));
+        search.setOnClickListener(new SearchItemScreenController(getApplicationContext()));
 
         ImageButton logout = findViewById(R.id.imageButton8);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));

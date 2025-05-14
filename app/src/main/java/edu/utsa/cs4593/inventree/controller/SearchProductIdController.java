@@ -64,15 +64,14 @@ public class SearchProductIdController extends AppCompatActivity {
             }
         });
 
-        inventory = new Inventory(loadProducts());
         EditText searchField = findViewById(R.id.productSearchText);
         Button searchButton = findViewById(R.id.search_button);
 
-        searchButton.setOnClickListener(new View.OnClickListener() {
+       /* searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 String query = searchField.getText().toString();
-                Product result = inventory.searchById(query);
+                Product result = Inventory.getInventory().search(query);
 
                 if(result != null){
                     Intent intent = new Intent(SearchProductIdController.this, IndividualProductReturnController.class);
@@ -83,7 +82,7 @@ public class SearchProductIdController extends AppCompatActivity {
 
                 }
             }
-        });
+        });*/
 
     }
 

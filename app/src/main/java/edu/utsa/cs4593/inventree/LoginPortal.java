@@ -4,7 +4,8 @@ import android.content.Intent;
 import android.util.Log;
 import android.widget.Toast;
 
-import edu.utsa.cs4593.inventree.controller.ManagerHomepageController;
+import edu.utsa.cs4593.inventree.controller.*;
+import edu.utsa.cs4593.inventree.model.Inventory;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
 
 public class LoginPortal {
@@ -18,17 +19,21 @@ public class LoginPortal {
         UserDatabase.loadUsers(context);
 
         if(UserDatabase.isValidUser(username,password)){
+            UserDatabase.setCurrentUser(username);
             String role = UserDatabase.getRole(username);
             if (role.equalsIgnoreCase("employee")) {
                 Intent intent = new Intent(context, EmployeeHomepage.class);
-                intent.putExtra("username", username);
+                if (Inventory.getInventory() == null) {
+                    Inventory.buildInventory(context);
+                }
                 context.startActivity(intent);
-                //Log.d("alternate route", "take to employee page");
             }
             else
             {
                 Intent intent = new Intent(context, ManagerHomepageController.class);
-                intent.putExtra("username", username);
+                if (Inventory.getInventory() == null) {
+                    Inventory.buildInventory(context);
+                }
                 context.startActivity(intent);
             }
         }else{
