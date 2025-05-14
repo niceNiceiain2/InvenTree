@@ -13,7 +13,6 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-import edu.utsa.cs4593.inventree.ManagerHomepage;
 import edu.utsa.cs4593.inventree.R;
 import edu.utsa.cs4593.inventree.model.Inventory;
 import edu.utsa.cs4593.inventree.model.Product;
@@ -60,7 +59,7 @@ public class SearchProductIdController extends AppCompatActivity {
         homeImageLogoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SearchProductIdController.this, ManagerHomepage.class);
+                Intent intent = new Intent(SearchProductIdController.this, ManagerHomepageController.class);
                 startActivity(intent);
             }
         });

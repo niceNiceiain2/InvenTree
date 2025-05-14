@@ -45,12 +45,12 @@ public class UserDatabase {
         return null;
     }
 
-//    public static User findUser(String username, String password){
-//        for(User user: users){
-//            if(user.getUsername().trim().equals(username) && user.getPassword().trim().equals(password)){
-//                return user;
-//            }
-//        }
-//        return null;
-//    }
+    public static User findUser(String username){
+        for(User user: users){
+            if(user.getUsername().trim().equals(username)){
+                return user;
+            }
+        }
+        return null;
+    }
 }

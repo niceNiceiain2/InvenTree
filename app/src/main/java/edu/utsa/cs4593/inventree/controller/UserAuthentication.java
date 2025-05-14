@@ -6,7 +6,6 @@ import android.util.Log;
 import android.widget.Toast;
 
 //import edu.utsa.cs4593.inventree.EmployeeHomepage;
-import edu.utsa.cs4593.inventree.ManagerHomepage;
 import edu.utsa.cs4593.inventree.model.Inventory;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
 
@@ -32,7 +31,7 @@ public class UserAuthentication{
 
             Intent intent;
             if("Manager".equalsIgnoreCase(role)){
-                intent = new Intent(context, ManagerHomepage.class);
+                intent = new Intent(context, ManagerHomepageController.class);
             }else{
 //              intent = new Intent(context, EmployeeHomepage.class);
                 Log.d("alternate route", "role is employee");

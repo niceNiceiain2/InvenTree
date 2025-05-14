@@ -20,8 +20,10 @@ public class LoginPortal {
         if(UserDatabase.isValidUser(username,password)){
             String role = UserDatabase.getRole(username);
             if (role.equalsIgnoreCase("employee")) {
-//              context.startActivity(new Intent(context, EmployeeHomepage.class));
-                Log.d("alternate route", "take to employee page");
+                Intent intent = new Intent(context, EmployeeHomepage.class);
+                intent.putExtra("username", username);
+                context.startActivity(intent);
+                //Log.d("alternate route", "take to employee page");
             }
             else
             {

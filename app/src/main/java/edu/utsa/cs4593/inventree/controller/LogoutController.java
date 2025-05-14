@@ -24,7 +24,7 @@ public class LogoutController implements View.OnClickListener {
         editor.apply();
 
         // Redirect user to LoginActivity
-        Intent intent = new Intent(context, LoginPortal.class);
+        Intent intent = new Intent(context, LoginActivityController.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         context.startActivity(intent);
     }

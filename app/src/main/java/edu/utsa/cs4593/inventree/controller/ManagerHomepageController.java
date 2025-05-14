@@ -13,7 +13,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 import edu.utsa.cs4593.inventree.R;
-
+import edu.utsa.cs4593.inventree.model.User;
+import edu.utsa.cs4593.inventree.model.UserDatabase;
 
 
 public class ManagerHomepageController extends AppCompatActivity {
@@ -33,6 +34,13 @@ public class ManagerHomepageController extends AppCompatActivity {
 
         ImageButton logout = findViewById(R.id.logOutButton);
         logout.setOnClickListener(new LogoutController(getApplicationContext()));
+
+        String username = getIntent().getStringExtra("username");
+        User currentUser = UserDatabase.findUser(username);
+        TextView un = findViewById(R.id.managerName);
+        un.setTextSize(20);
+        String name = currentUser.getFirstName() + " " + currentUser.getLastName();
+        un.setText(name);
 
         ImageButton searchProduct = findViewById(R.id.search_button);
         searchProduct.setOnClickListener(new View.OnClickListener() {

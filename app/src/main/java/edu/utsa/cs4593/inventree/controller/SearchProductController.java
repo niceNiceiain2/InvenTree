@@ -13,7 +13,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import edu.utsa.cs4593.inventree.ManagerHomepage;
 import edu.utsa.cs4593.inventree.R;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
 
@@ -78,7 +77,7 @@ public class SearchProductController extends AppCompatActivity {
         homeImageLogoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SearchProductController.this, ManagerHomepage.class);
+                Intent intent = new Intent(SearchProductController.this, ManagerHomepageController.class);
                 startActivity(intent);
             }
         });
