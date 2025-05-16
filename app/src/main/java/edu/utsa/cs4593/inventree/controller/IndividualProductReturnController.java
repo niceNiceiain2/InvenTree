@@ -26,14 +26,7 @@ public class IndividualProductReturnController extends AppCompatActivity {
             detailsText.setText("No product details Found");
         }
 
-        ImageButton homeButton = findViewById(R.id.home_image_logo);
-        homeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(IndividualProductReturnController.this, ManagerHomepageController.class);
-                startActivity(intent);
-            }
-        });
+
 
         //TODO: ADD LOGOUT BUTTON FUNCTIONALITY
     }

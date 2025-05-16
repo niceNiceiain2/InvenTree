@@ -66,6 +66,26 @@ public class Product {
         return notes;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setPrice(String price){
+        this.price = price;
+    }
+
+    public void setStockTag(String stockTag){
+        this.stockTag = stockTag;
+    }
+
+    public void setCategory(String category){
+        this.category = category;
+    }
+
+    public void setLocation(String location){
+        this.location = location;
+    }
+
     @NonNull
     @Override
     public String toString(){

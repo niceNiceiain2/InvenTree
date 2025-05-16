@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,9 +38,21 @@ public class EmployeeHomepageController extends AppCompatActivity {
         logout.setOnClickListener(new LogoutController(getApplicationContext()));
 
         String username = UserDatabase.getCurrentUser();
+        if (username == null) {
+            Toast.makeText(this, "Error: No user is currently logged in", Toast.LENGTH_LONG).show();
+            finish(); // Or redirect to login screen
+            return;
+        }
         User currentUser = UserDatabase.findUser(username);
+        if (currentUser == null) {
+            Toast.makeText(this, "Error: User not found in database", Toast.LENGTH_LONG).show();
+            finish(); // Or redirect to login screen
+            return;
+        }
         TextView un = findViewById(R.id.employeeName);
         un.setTextSize(20);
+
+
         String name = currentUser.getFirstName() + " " + currentUser.getLastName();
         un.setText(name);
 

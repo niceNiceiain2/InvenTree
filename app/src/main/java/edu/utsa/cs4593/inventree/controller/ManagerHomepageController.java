@@ -16,6 +16,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 
+import edu.utsa.cs4593.inventree.EditProductInventory;
 import edu.utsa.cs4593.inventree.R;
 import edu.utsa.cs4593.inventree.model.User;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
@@ -51,6 +52,15 @@ public class ManagerHomepageController extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ManagerHomepageController.this, SearchProductController.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageButton editProductDetails = findViewById(R.id.edit_product_details_button);
+        editProductDetails.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent(ManagerHomepageController.this, EditProductInventoryController.class);
                 startActivity(intent);
             }
         });

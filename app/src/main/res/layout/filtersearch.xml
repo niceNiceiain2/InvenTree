@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <Spinner
-        android:id="@+id/stockTag_dropdown"
+        android:id="@+id/availability_dropdown"
         android:layout_width="371dp"
         android:layout_height="26dp"
         app:layout_constraintBottom_toBottomOf="parent"

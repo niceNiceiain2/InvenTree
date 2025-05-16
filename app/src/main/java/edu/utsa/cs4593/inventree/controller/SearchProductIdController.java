@@ -46,25 +46,9 @@ public class SearchProductIdController extends AppCompatActivity {
             }
         });
 
-        /*
-         * creates an image button on click listener and sets intent
-         * to take user back to the homepage when the home image logo is
-         * clicked
-         *
-         * TODO: CHANGE THIS TO INCLUDE A CONDITIONAL DETERMINING IF THE
-         *  USER SHOULD BE BROUGHT TO THE MANAGER HOMEPAGE OR THE EMPLOYEE
-         *  HOMEPAGE
-         */
-        ImageButton homeImageLogoButton = findViewById(R.id.home_image_logo);
-        homeImageLogoButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(SearchProductIdController.this, ManagerHomepageController.class);
-                startActivity(intent);
-            }
-        });
 
-        inventory = new Inventory(loadProducts());
+
+        inventory = new Inventory(this);
         EditText searchField = findViewById(R.id.productSearchText);
         Button searchButton = findViewById(R.id.search_button);
 
@@ -86,13 +70,4 @@ public class SearchProductIdController extends AppCompatActivity {
         });
 
     }
-
-    private List<Product> loadProducts() {
-        List<Product> products = new ArrayList<>();
-        products.add(new Product("College Textbook: Math 101","$89.99","Textbooks","123456789012","STRE-0000","In Stock","50","A3","N/A"));
-        products.add(new Product("Blue Ink Pen","$1.50","School Supplies","889977665544","STRE-0005","In Stock","200","F3","N/A"));
-        return products;
-    }
-
-
 }
