@@ -13,14 +13,14 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import edu.utsa.cs4593.inventree.EmployeeHomepage;
+
 import edu.utsa.cs4593.inventree.R;
-import edu.utsa.cs4593.inventree.model.UserDatabase;
+
 
 public class SearchProductController extends AppCompatActivity {
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
 
         /*
          * on create will display the layout of the search product xml
@@ -62,17 +62,6 @@ public class SearchProductController extends AppCompatActivity {
          *  USER SHOULD BE BROUGHT TO THE MANAGER HOMEPAGE OR THE EMPLOYEE
          *  HOMEPAGE
          */
-
-        String username = UserDatabase.getCurrentUser();
-        String userRole = UserDatabase.getRole(username);
-
-        if ("manager".equalsIgnoreCase(userRole)) {
-            Intent intent = new Intent(this, ManagerHomepageController.class);
-            startActivity(intent);
-        } else {
-            Intent intent = new Intent(this, EmployeeHomepage.class);
-            startActivity(intent);
-        }
 
         ImageButton homeImageLogoButton = findViewById(R.id.home_image_logo);
         homeImageLogoButton.setOnClickListener(new View.OnClickListener() {
@@ -162,20 +151,20 @@ public class SearchProductController extends AppCompatActivity {
          */
         TextView forCustomerSearchButton1 = findViewById(R.id.for_customer_search_text);
         forCustomerSearchButton1.setOnClickListener(new View.OnClickListener() {
-           @Override
-            public void onClick(View view){
-               Intent intent = new Intent(SearchProductController.this, ForCustomerSearchController.class);
-               startActivity(intent);
-           }
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SearchProductController.this, ForCustomerSearchController.class);
+                startActivity(intent);
+            }
         });
 
         ImageButton forCustomerSearchButton2 = findViewById(R.id.for_customer_search_icon_button);
         forCustomerSearchButton2.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View view){
-               Intent intent = new Intent(SearchProductController.this, ForCustomerSearchController.class);
-               startActivity(intent);
-           }
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SearchProductController.this, ForCustomerSearchController.class);
+                startActivity(intent);
+            }
         });
     }
 
@@ -188,17 +177,22 @@ public class SearchProductController extends AppCompatActivity {
      */
     private String loadTextFromAssets(String filename){
         StringBuilder text = new StringBuilder();
-        try{
+        try {
             InputStream is = getAssets().open(filename);
             BufferedReader reader = new BufferedReader(new InputStreamReader(is));
             String line;
-            while((line = reader.readLine())!=null){
+            while ((line = reader.readLine()) != null) {
                 text.append(line).append("\n");
             }
             reader.close();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return text.toString();
     }
 }
+
+
+
+
+

@@ -1,12 +1,12 @@
 package edu.utsa.cs4593.inventree.controller;
 
-import android.content.Context;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,22 +15,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import edu.utsa.cs4593.inventree.EmployeeHomepage;
+
 import edu.utsa.cs4593.inventree.R;
-import edu.utsa.cs4593.inventree.SearchActivity;
 import edu.utsa.cs4593.inventree.model.User;
 import edu.utsa.cs4593.inventree.model.UserDatabase;
 
 
-public class ManagerHomepageController extends AppCompatActivity implements View.OnClickListener {
-    @Override
-    public void onClick(View view) {
-        Context context = view.getContext();
-        int duration = Toast.LENGTH_SHORT;
-
-        Intent intent = new Intent(context, ManagerHomepageController.class);
-        context.startActivity(intent);
-    }
+public class ManagerHomepageController extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +50,7 @@ public class ManagerHomepageController extends AppCompatActivity implements View
         searchProduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), SearchActivity.class);
+                Intent intent = new Intent(ManagerHomepageController.this, SearchProductController.class);
                 startActivity(intent);
             }
         });

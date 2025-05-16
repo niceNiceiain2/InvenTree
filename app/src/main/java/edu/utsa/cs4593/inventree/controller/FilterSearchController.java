@@ -1,6 +1,15 @@
 package edu.utsa.cs4593.inventree.controller;
 
-public class FilterSearchController {
+import androidx.appcompat.app.AppCompatActivity;
+public class FilterSearchController extends AppCompatActivity {
 
-    //TODO: ADD ON CREATE INSTANCE OF LAYOUT AND ADD ON CONTROLLER GUI CONTROLLER ELEMENTS
+    @Override
+    protected void onCreate (Bundle savedInstanceState){
+        /*
+         * sets the layout page for Filter search
+         * which allows you to search for multiple products
+         * by matching categories
+         */
+    }
+
 }

@@ -3,6 +3,11 @@ package edu.utsa.cs4593.inventree.model;
 import androidx.annotation.NonNull;
 
 public class Product {
+
+    /*
+     *  TODO: I WANT TO BE ABLE TO CREATE THE ARRAY LIST OF PRODUCT
+     *   OBJECTS FROM THE PRODUCT DETAILS CSV
+     */
     private String name;
     private String price;
     private String category;

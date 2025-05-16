@@ -40,20 +40,6 @@
         app:layout_constraintVertical_bias="0.101"
         app:srcCompat="@drawable/logout" />
 
-    <ImageButton
-        android:id="@+id/home_image_logo"
-        android:layout_width="86dp"
-        android:layout_height="99dp"
-        android:backgroundTint="@color/white"
-        android:contentDescription="@string/home_image_logo_desc"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.064"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.088"
-        app:srcCompat="@drawable/title" />
 
     <TextView
         android:id="@+id/select_location_text"
